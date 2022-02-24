@@ -5,6 +5,7 @@
   "dependencies": {
     "@cypress/react": "^5.4.2",
     "@cypress/webpack-dev-server": "^1.1.6",
+    "@mermaid-js/mermaid-cli": "^8.14.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -15,11 +16,13 @@
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "react-test-renderer": "^17.0.2",
+    "styled-components": "^5.3.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "test-snapshot": "react-scripts test",
-    "test-visual": "cypress run-ct --reporter cypress-image-snapshot/reporter --env failOnSnapshotDiff=false"
+    "test-visual": "cypress run-ct --reporter cypress-image-snapshot/reporter --env failOnSnapshotDiff=false",
+    "diagrams": "bash scripts/generate-diagrams.sh"
   },
   "jest": {
     "testMatch": [

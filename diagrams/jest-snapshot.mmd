@@ -1,0 +1,5 @@
+flowchart TD
+    A[Run test] --> B
+    B[Generate DOM Snapshot] --> C{Snapshot has changed?}
+    C -->|Yes| D[Error]
+    C ---->|No| E[Success]

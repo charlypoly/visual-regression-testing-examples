@@ -1,7 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-<div>
-  coucou
+exports[`<Avatar /> with a valid image renders correctly 1`] = `
+<div
+  className="sc-bdvvtL oSqWo"
+>
+  <img
+    onError={[Function]}
+    src="https://i.picsum.photos/id/623/200/200.jpg?hmac=xquTjHIYmAPV3XEGlIUaV_KWyEofkbortxrK79jJhWA"
+  />
+</div>
+`;
+
+exports[`<Avatar /> with an invalid image renders correctly 1`] = `
+<div
+  className="sc-bdvvtL oSqWo"
+>
+  <img
+    onError={[Function]}
+    src="<not_and_url>"
+  />
 </div>
 `;
