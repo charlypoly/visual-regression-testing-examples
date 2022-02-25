@@ -5,6 +5,7 @@ on:
     branches:
       - master
 
+jobs:
   test:
     name: Testing on Node ${{matrix.node-version}}
     runs-on: ubuntu-latest
