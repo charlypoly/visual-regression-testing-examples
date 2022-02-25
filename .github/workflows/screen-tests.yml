@@ -16,19 +16,18 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Test
-        continue-on-error: true
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: true
         uses: cypress-io/github-action@v1
         with:
           # to run component tests we need to use "test-visual" command
-          command: yarn test-visual
+          command: yarn test-visual --env failOnSnapshotDiff=false
 
       - name: Store screenshots
         uses: actions/upload-artifact@v1
         with:
           name: screenshots
-          path: cypress/screenshots
+          path: cypress/snapshots
 
       - name: Fail if diff found
-        run: test -n "$(find ./cypress -type d -name "__diff_output__")"
+        run: test "$(find ./cypress -type d -name "__diff_output__")" = ""
