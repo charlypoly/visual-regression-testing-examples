@@ -8,7 +8,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node16.5.0-chrome97-ff96
+    container: 
+      image: cypress/browsers:node16.5.0-chrome94-ff93
+      options: --user 1001
     steps:
       - name: Checkout Master
         uses: actions/checkout@v1
