@@ -10,7 +10,7 @@ const Avatar = ({ src, className }) => {
 
   return (
     <div className={className}>
-      {fallback ? <AvatarFallback /> : <img src={src} onError={onFallback} />}
+      {!fallback ? <AvatarFallback /> : <img src={src} onError={onFallback} />}
     </div>
   );
 };
