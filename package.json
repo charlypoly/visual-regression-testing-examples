@@ -21,7 +21,7 @@
   },
   "scripts": {
     "test-snapshot": "react-scripts test",
-    "test-visual": "cypress run-ct --reporter cypress-image-snapshot/reporter --env failOnSnapshotDiff=false",
+    "test-visual": "cypress run-ct --reporter cypress-image-snapshot/reporter",
     "diagrams": "bash scripts/generate-diagrams.sh"
   },
   "jest": {
