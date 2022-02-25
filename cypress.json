@@ -1,7 +1,7 @@
 {
   "component": {
     "componentFolder": "src",
-    "testFiles": "**/*.visual.spec.{js,jsx,ts,tsx}"
+    "testFiles": "__tests__/screen/*.jsx"
   },
   "video": false
 }

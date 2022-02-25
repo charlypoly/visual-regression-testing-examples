@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Avatar from "../src/Avatar";
+import Avatar from "../../Avatar";
 
 describe("<Avatar />", () => {
   describe("with a valid image", () => {

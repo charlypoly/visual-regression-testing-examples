@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import React from "react";
 import { mount } from "@cypress/react";
-import Avatar from "./Avatar";
+import Avatar from "../../Avatar";
 
 describe("<Avatar />", () => {
   describe("with a valid image", () => {
