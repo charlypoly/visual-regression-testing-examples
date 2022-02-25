@@ -16,7 +16,7 @@ const Avatar = ({ src, className }) => {
 };
 
 export default styled(Avatar)`
-  margin: 10px;
+  margin: 15px;
 
   & img {
     border-radius: 50%;
