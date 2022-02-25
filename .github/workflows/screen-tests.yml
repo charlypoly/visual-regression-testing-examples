@@ -19,6 +19,9 @@ jobs:
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: true
         uses: cypress-io/github-action@v1
+        with:
+          # to run component tests we need to use "cypress run-ct"
+          command: yarn cypress run-ct
 
       - name: Store screenshots
         uses: actions/upload-artifact@v1
